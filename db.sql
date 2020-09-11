@@ -24,3 +24,13 @@ StoresRegulations varchar(100),
 OtherRegulation varchar(100),
 status varchar(100));
 
+CREATE TABLE auditors (
+id int(10) primary key auto_increment,
+firstname varchar(100),
+surname varchar(100),
+email varchar(100),
+mobile varchar(100),
+username varchar(100),
+password varchar(100),
+accountLevel varchar(100),
+status varchar(100));
