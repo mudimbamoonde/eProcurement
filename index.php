@@ -4,13 +4,7 @@ include "includes/topHead.php";
 include "includes/head.php";
 include "includes/sideNav.php";
 ?>
-<?php
-if(!isset($_SESSION["id"])) {
-    header("location:login.php");
-}
-?>
-
-	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="index.php">

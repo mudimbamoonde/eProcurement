@@ -1,4 +1,11 @@
-<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+<?php require_once "config.php" ?>
+<?php
+if(!isset($_SESSION["id"])) {
+    header("location:logout.php");
+}
+
+?>
+<div id="sidebar-coll1apse" class="col-sm-3 col-lg-2 sidebar">
     	    <div class="profile-sidebar">
     	        <div class="profile-userpic">
     	            <img src="" class="img-responsive" alt="">

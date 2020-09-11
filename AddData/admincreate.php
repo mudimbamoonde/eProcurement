@@ -31,9 +31,11 @@ if (empty($firstname)||empty($lname)||empty($email) || empty($Mobile) || empty($
           <a href='#' class='close' data-dismiss ='alert' aria-label ='close'>&times;</a><b>Password does not match!</b>
      </div> ";
     }else{
-        $check_valid = "SELECT*FROM auditors WHERE email = '".$email."'";
-        $check_result = $con->query($check_valid);
-        $count = $check_result->num_rows;
+        $check_valid = "SELECT*FROM auditors WHERE email=?";
+        $check_result = $con->prepare($check_valid);
+        $check_result->bindValue(1,$email);
+        $check_result->execute();
+        $count = $check_result->rowCount();
         if ($count>0){
             echo "<div class='alert alert-warning'>
           <a href='#' class='close' data-dismiss ='alert' aria-label ='close'>&times;</a><b>Email is Already been Used !</b>
