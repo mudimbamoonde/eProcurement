@@ -8,7 +8,7 @@ if(!isset($_SESSION["id"])) {
 <div id="sidebar-coll1apse" class="col-sm-3 col-lg-2 sidebar">
     	    <div class="profile-sidebar">
     	        <div class="profile-userpic">
-    	            <img src="" class="img-responsive" alt="">
+    	            <!-- <img src="" class="img-responsive" alt=""> -->
     	        </div>
     	        <div class="profile-usertitle">
     	            <div class="profile-usertitle-name"><?php echo $_SESSION["firstName"]." ".$_SESSION["surname"]; ?></div>

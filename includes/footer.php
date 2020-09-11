@@ -1,5 +1,5 @@
 			<div class="col-sm-12">
-			    <p class="back-link">Copyright 2020.Revenue Recovery System.Designed and Developed by Jessie Mushili.All Rights Reserved</p>
+			    <p class="back-link">Copyright 2020.Revenue Recovery System.Designed and Developed by Jessy Muchele.All Rights Reserved</p>
 			</div>
 			</div>
 			<!--/.row-->
