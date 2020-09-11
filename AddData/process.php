@@ -14,8 +14,16 @@ if(empty($paye_name) || empty($cheqNum) || empty($details)|| empty($amount)||emp
         <a href='#' class='close' data-dismiss ='alert' aria-label ='close'>&times;</a><b>Please Fill all The Fields!</b>
       </div> ";
 }else {
-
-    $sql = "INSERT INTO accounttran  VALUES(NULL,NOW(),'$paye_name','$cheqNum','$details','$amount','$amountCode','Not Cleared')";
+/**
+  id          | int(10)      | NO   | PRI | NULL    | auto_increment |
+| Date        | date         | YES  |     | NULL    |                |
+| cheqnum     | varchar(100) | NO   |     | NULL    |                |
+| Details     | text         | YES  |     | NULL    |                |
+| Amount      | varchar(100) | YES  |     | NULL    |                |
+| AccountCode | varchar(100) | YES  |     | NULL    |                |
+| status
+ */
+    $sql = "INSERT INTO accounttran(id,Date,cheqnum,Details,Amount,AccountCode,status)  VALUES(NULL,NOW(),'$paye_name','$cheqNum','$details','$amount','$amountCode','Not Cleared')";
     $run_query =$con->query($sql);
     if ($run_query){
         $output .="<div class='alert alert-info'>
