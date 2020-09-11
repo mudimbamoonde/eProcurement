@@ -31,10 +31,10 @@ if(!isset($_SESSION["id"])) {
 					<div class="panel-body easypiechart-panel">
 						<h4>Rejected Account Transaction</h4>
                         <?php
-                          $sl = $con->prepare("SELECT count(*) AS counts FROM accounttran WHERE status='Rejected'");
+                        $sl = $con->prepare("SELECT count(*) AS counts FROM accounttran WHERE status='Rejected'");
                         $sl->execute();
-                          $count = $sl->rowCount();
-                          echo "<div class='easypiechart' id='easypiechart-blue' data-percent='$count'><span class='percent'> $count </span></div>";
+                        $count = $sl->rowCount();
+                        echo "<div class='easypiechart' id='easypiechart-blue' data-percent='$count'><span class='percent'> $count </span></div>";
                         ?>
 					</div>
 				</div>

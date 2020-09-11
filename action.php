@@ -463,7 +463,7 @@ if (isset($_POST["CreateAdminAccount"])) {
     $password = $_POST["password"];
     $AccountID = $_POST["AccountID"];
 
-//StaffID 	access_level 	username 	auditorID 	password
+    //StaffID 	access_level 	username 	auditorID 	password
     $adim = "INSERT INTO auditor_staff (StaffID,access_level,username,aditorID,password) VALUES(NULL,'{$accountLevel}','{$username}','{$AccountID}','{$password}')";
     $insertAdmin = $con->query($adim);
 
