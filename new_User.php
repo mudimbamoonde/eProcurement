@@ -1,5 +1,4 @@
 <?php
-session_start();
 include "includes/topHead.php";
 include "includes/head.php"; ?>
 <?php include "includes/sideNav.php"; ?>

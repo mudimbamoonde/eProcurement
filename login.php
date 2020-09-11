@@ -34,8 +34,11 @@ if(isset($_SESSION["id"])) {
                             $password = trim(md5($_POST["password"]));
 
                             include "includes/config.php";
-                            $sql = "SELECT*FROM auditors WHERE email='$email' AND password='$password'";
-                            $run_query = $con->query($sql);
+                            $sql = "SELECT*FROM auditors WHERE email=? AND password=?";
+                            $run_query = $con->prepare($sql);
+                            $run_query->bindValue(1,$email);
+                            $run_query->bindValue(2,$password);
+                            $run_query->execute();
                             // $count = mysqli_num_rows($run_query);
                             $COUNT = $run_query->rowCount();
                             if ($COUNT==1) {
@@ -55,7 +58,7 @@ if(isset($_SESSION["id"])) {
                                                     <ul>
                                                     <li>Email -> $email</li>
                                                     </ul>
-                                                     </div> ";
+                            </div> ";
                             }
                         }else{
                             $username ="";

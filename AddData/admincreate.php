@@ -52,7 +52,7 @@ if (empty($firstname)||empty($lname)||empty($email) || empty($Mobile) || empty($
 //status
 
 
-            $enpPassword = sha1($password);
+            $enpPassword = md5($password);
             $insertion_qury = "INSERT INTO auditors (id,firstname,surname,email,mobile,username,password,accountLevel,status) 
                                  VALUES (NULL,'{$firstname}','{$lname}','{$email}','{$Mobile}','{$username}',
                                  '{$enpPassword}','{$type}',1)";

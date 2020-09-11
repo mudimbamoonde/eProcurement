@@ -1,5 +1,4 @@
 <?php
-include "includes/config.php";
 include "includes/topHead.php";
 include "includes/head.php";
 include "includes/sideNav.php";
