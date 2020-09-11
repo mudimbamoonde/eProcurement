@@ -23,7 +23,7 @@ if(empty($paye_name) || empty($cheqNum) || empty($details)|| empty($amount)||emp
 | AccountCode | varchar(100) | YES  |     | NULL    |                |
 | status
  */
-    $sql = "INSERT INTO accounttran(id,Date,cheqnum,Details,Amount,AccountCode,status)  VALUES(NULL,NOW(),'$paye_name','$cheqNum','$details','$amount','$amountCode','Not Cleared')";
+    $sql = "INSERT INTO accounttran(id,Date,paye,cheqnum,Details,Amount,AccountCode,status) VALUES(NULL,NOW(),'$paye_name','$cheqNum','$details','$amount','$amountCode','Not Cleared')";
     $run_query =$con->query($sql);
     if ($run_query){
         $output .="<div class='alert alert-info'>

@@ -8,6 +8,7 @@ CREATE TABLE auditor_staff (
 CREATE TABLE accounttran (
 id int(10) primary key auto_increment,
 Date date,
+p
 cheqnum varchar(100) not null,
 Details text, 
 Amount varchar(100),

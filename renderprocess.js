@@ -169,7 +169,7 @@ $(document).ready(function () {
                 $("#notifica").html(data);
                 //alert(data);
                 //Transaction();
-                setTimeout(200,window.location.href = "AccTran.php");
+                setTimeout(200,window.location.href = "AccountTransaction.php");
             }
         });
     });
@@ -192,7 +192,7 @@ $(document).ready(function () {
                 //alert(data);
                 $("#message").html(data);
                 //alert(data);
-                setTimeout(1,10000, window.location.href = "AccTran.php");
+                setTimeout(1,10000, window.location.href = "AccountTransaction.php");
 
             }
         });
