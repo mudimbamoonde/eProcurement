@@ -24,7 +24,7 @@ if(isset($_SESSION["id"])) {
             <div align="center">
             <img src="images/coat.png" width="100" height="100"/>
             </div>
-            <div class="panel-heading text-center">Revenue Recovery</div>
+            <div class="panel-heading text-center">eProcurement</div>
             <div class="panel-body">
                 <form role="form" method="post">
                     <fieldset>

@@ -5,7 +5,7 @@
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span></button>
-	            <a class="navbar-brand" href="#"><span>Revenue</span>Recovery</a>
+	            <a class="navbar-brand" href="#"><span>e</span>Procurement</a>
 <!--	            <ul class="nav navbar-top-links navbar-right">-->
 <!--	                <li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">-->
 <!--	                        <em class="fa fa-bell"></em><span class="label label-info">5</span>-->
